@@ -1,0 +1,69 @@
+{% extends "base.html" %} 
+{% block title %}{% endblock %} 
+{% block content %}
+<div class="section no-pad-bot" id="index-banner">
+  <!--  <div class="container"> --->
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card horizontal grey darken-3" id="oil_price">
+                    <div class="card-image">
+                        <img src="https://cdn4.iconfinder.com/data/icons/100-popular-requests-1/70/icon_sets_100_popular_requests_outline_iconfinder-59-128.png">
+                    </div>
+                    <div class="card-stacked">
+                    <div class="card-content green-text">
+                        <span class="card-title"><strong>Oil</strong></span>
+                        <p>${{op}} USD</p>
+                    </div class="card-action">
+                        <a href="www.eia.gov" class="yellow-text">Source: U.S. EIA</a>
+                    <div>
+                    </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card horizontal grey darken-3">
+                    <div class="card-image">
+                        <img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/flame-128.png">
+                    </div>
+                    <div class="card-stacked">
+                    <div class="card-content red-text" id="gas_price">
+                        <span class="card-title"><b>Nat Gas</b></span>
+                        <p>${{np}} USD</p>
+                    </div class="card-action">
+                        <a href="www.eia.gov" class="yellow-text">Source: U.S. EIA</a>
+                    <div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card horizontal grey darken-3" id="rig_count">
+                    <div class="card-image">
+                        <img src="https://cdn0.iconfinder.com/data/icons/industrial-icons/164/2-128.png">
+                    </div>
+                    <div class="card-stacked">
+                    <div class="card-content light-blue-text">
+                        <span class="card-title"><b>Rig Count</b></span>
+                        <p>{{rc}} Rigs</p>
+                    </div class="card-action">
+                        <a href="www.eia.gov" class="yellow-text">Source: U.S. EIA</a>
+                    <div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- <row>
+            <div class="video-container s12 m4">
+            <iframe id="eia_widget" style="width:100%;height:500px" src="//www.eia.gov/opendata/embed/iframe.php?series_id=PET.RWTC.D" load="iframe_load"></iframe>
+            </div>
+            <div class="video-container s12 m4">
+            <iframe id="eia_widget" style="width:100%;height:500px" src="//www.eia.gov/opendata/embed/iframe.php?series_id=NG.RNGWHHD.D" load="iframe_load"></iframe>
+            </div>
+            <div class="video-container s12 m4">
+            <iframe id="eia_widget" style="width:100%;height:500px" src="//www.eia.gov/opendata/embed/iframe.php?series_id=TOTAL.OGNRPON.M" load="iframe_load"></iframe>
+            </div>
+        </row> --->
+ <!--  </div> --->
+</div>
+{% endblock %}
